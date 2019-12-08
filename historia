@@ -1,0 +1,110 @@
+#!/bin/bash
+
+echo "4.- I N I C I O"
+
+echo "Presione 4"
+read VariablM
+
+if [ $VariablM  == 4 ];then
+
+tput bold; tput blink;  tput setaf 3;
+echo -e "Historia";tput sgr0;
+sleep 3
+echo -ne "Inicializando.\r";tput setaf 1;
+sleep 5
+echo -ne "Inicializando..\r";tput sgr0;
+sleep 1
+echo -ne "Inicializando..\r";tput setaf 1;
+sleep 2
+echo -ne "Inicializando..\r";tput sgr0;
+sleep 1
+echo -ne "Inicializando..\r"
+sleep 1; tput setaf 2;
+echo -ne "Inicializando...\r\n\n"; tput sgr0;
+
+                                                                  sleep 3
+tput setaf 3;
+
+echo -e "\n"
+tput sgr0;
+echo -e "Estas en un mundo extraño, por alguna razon puedes volar, ¿que quieres hacer?\n"
+sleep 1
+tput setaf 6; echo -en "<<<1. Vuelas y exploras >>>\t<<<2. Decides caminar>>>\n"; tput sgr0;
+sleep 1
+echo "¿Cual eliges usar primero?"
+read opc1
+        if [ $opc1 == 1 ];then
+        cowsay -f
+        tput setaf 1;
+        cowsay -f
+        tput setaf 3;
+        echo "YOU DIED";tput sgr0;
+        fi
+
+        if [ $opc1 == 2 ];then
+        echo ".."
+        tput setaf 7;
+        cowsay Moo; tput sgr0;
+        echo -e " Te encuentras con un perro...\n"
+        sleep 2
+        echo -e "Decides acariciarlo, y entonces...\n"
+        sleep 3
+        cowsay
+        echo "Te habla y te dice que lo sigas, asi que lo haces"
+        sleep 3
+        echo "Llegan a un lugar donde parece haber ocurrido una guerra"
+        echo "Esta oscuro, decides..."
+        tput setaf 6;
+        sleep 1
+        echo -en " <<1. Buscar algo que de luz >>>\t<<<2. Esperar...>>>"
+        tput sgr0;
+        read opc2
+
+                if [ $opc2 == 1 ];then
+                tput setaf 1;
+
+                echo "Sale un ser vivo mur raro y solo observa al perro, asi que va hacia ti"
+                tput setaf 3; echo "YOU DIED"
+                fi
+
+                if [ $opc2 == 2 ]; then
+                sleep 2
+                echo -e "Yo: ...\nEsto es muy raro..."
+                sleep 2
+                echo -en ".\r"
+                sleep 2
+                 echo -ne "..\r"
+                sleep 2
+                echo -en "...\r"
+                sleep 2
+
+                sleep 2
+                echo "Yo: ..."
+                sleep 3
+                tput setaf 1;tput blink;cowsay -f flaming-sheep meeeeeh;tput sgr0;
+                sleep 2
+                echo "El perro vuela y prende una luz con un objeto  raro..."
+                sleep 4
+                tput setaf 1; cowsay -f dragon SHgm; tput sgr0;
+                echo -en ".\r"
+                sleep 3
+                echo -en "..\r"
+                sleep 3
+                echo -en "...\r"
+                sleep 3
+                echo "Ves un ser raro y decides volar tambien"
+                sleep 3
+                echo "Te das cuenta que el ser vuela, y esta alcanzandote, estas tan confuso que..."
+                tput blink;tput setaf 1; echo "!!!";tput sgr0;
+                sleep 5
+                echo "Caes en un lugar muy colorido, como otra dimension..."
+                echo "..."
+                tput setaf 3; fortune -s; tput sgr0;
+                sleep 5
+                tput setaf 1;echo "THE END?"; tput sgr0;
+                fi
+        fi
+
+fi
+
+  
